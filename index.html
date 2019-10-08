@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Library App</title>
+  <meta name="description" content="Personal library">
+  <meta name="author" content="Sylvie">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <h1>Mini library app</h1>
+        <p>Enter your book's details to add it to the collection.</p>
+        <button id="addBook">Add a book</button>
+    </header>
+
+    <div class="modal" id="myModal">
+        <div class="modal-content">
+            <form id="form">
+            <span class="close">&times;</span>
+            <p>Enter your book's details</p>
+            <input type="text" placeholder="Title" id="titleBook" required>
+            <input type="text" placeholder="Author" id="authorBook" required>
+            <input type="number" min=0 placeholder="Pages" id="pagesBook" required>
+            <input list="read" placeholder="Read" id="ifRead" required>
+            <datalist id="read">
+                <option value="Yes">
+                <option value="No">
+            </datalist>
+            <input type="submit" value="Add" id="submitBook">
+        </form>
+        </div>
+    </div>
+
+    <table>
+        <tr>
+             <th>Title</th>
+            <th>Author</th>
+            <th>Pages</th>
+            <th>Read</th>
+        </tr>
+    </table>
+
+    <table id="tableContent">
+    </table>
+
+
+
+  <script src="Obj-Assignment1.js"></script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+html, body {
+    background-color: white;
+    color: black;
+    margin:0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    background-color: rgb(36, 35, 35);
+    margin: 0;
+    text-align: center;
+    top:0;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+h1, p {
+    margin: 0;
+    padding: 1rem 0;
+}
+
+button {
+    margin: 1rem 0 2rem 0;
+    background-color: white;
+    color: black;
+    font-size: 1.2em;
+    padding: .2em .5em;
+    border-radius: 5px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 1em 0;
+}
+
+tr {
+    display: flex;
+    justify-content: space-around;
+}
+
+td, th {
+    text-align: center;
+    border: none;
+    padding: 1em;
+}
+
+#tableContent tr:nth-child(odd) {
+    background-color: #dddddd;
+}
+
+/**
+MODAL CONTENT!!!!!!!!!!!!!!!
+**/
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    padding-top: 100px;
+    left:0;
+    top:0;
+    width:100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 2em;
+    border: 1px solid #888;
+    width: 50%;
+    animation: animate .4s ease-in;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+input {
+    display: block;
+    margin: 1em auto;
+    border: 1px solid #888;
+    border-radius: 5px;
+    height: 3em;
+    width: 80%;
+    padding: 0 0 0 1em;
+    outline: none;
+
+}
+
+input:focus,
+input:hover{
+    border: 1px solid black;
+}
+
+input[type="submit"] {
+    width: 20%;
+    text-align: center;
+    padding: 0 1em;
+}
+
+@keyframes animate {
+    from {top: -500px; opacity: 0}
+    to {top:0; opacity:1}
+}
